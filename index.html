@@ -140,6 +140,51 @@ audio{width:100%;height:40px;border-radius:40px;filter:sepia(.3) hue-rotate(300d
 .reveal-scale{opacity:0;transform:scale(.88);transition:opacity 1s ease,transform 1s ease}
 .reveal-scale.show{opacity:1;transform:scale(1)}
 @keyframes shake{0%,100%{transform:none}20%,60%{transform:translateX(-8px)}40%,80%{transform:translateX(8px)}}
+
+.gift-section{background:linear-gradient(180deg,#110009,#1a0812 50%,#110009);text-align:center}
+.gift-eyebrow{font-family:"Montserrat",sans-serif;font-weight:300;font-size:clamp(.68rem,1.8vw,.82rem);letter-spacing:.28em;color:rgba(212,175,122,.5);text-transform:uppercase;margin-bottom:10px}
+.gift-title{font-family:"Dancing Script",cursive;font-size:clamp(2rem,5.5vw,3.6rem);color:var(--rose);margin-bottom:10px;line-height:1.2}
+.gift-subtitle{font-family:"Lora",serif;font-style:italic;font-size:clamp(.88rem,2vw,1.1rem);color:rgba(249,168,201,.5);max-width:460px;margin:0 auto clamp(30px,5vw,56px);line-height:1.9}
+.gift-card-wrap{max-width:400px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:0}
+.gc-ribbon{background:linear-gradient(90deg,transparent,rgba(249,168,201,.08),rgba(249,168,201,.15),rgba(249,168,201,.08),transparent);border-top:1px solid rgba(249,168,201,.18);border-bottom:1px solid rgba(249,168,201,.18);width:100%;padding:9px 20px;border-radius:12px 12px 0 0}
+.gc-ribbon-text{font-family:"Dancing Script",cursive;font-size:clamp(1rem,2.5vw,1.25rem);color:rgba(249,168,201,.6);letter-spacing:.06em}
+.gift-card{position:relative;width:100%;background:linear-gradient(145deg,#2a0b1e 0%,#1e0816 40%,#280d1c 100%);border:1px solid rgba(249,168,201,.22);border-top:none;border-radius:0 0 24px 24px;overflow:hidden;padding:clamp(22px,4vw,36px) clamp(24px,5vw,40px) clamp(18px,3vw,28px);box-shadow:0 32px 80px rgba(0,0,0,.7),0 0 0 1px rgba(249,168,201,.06) inset}
+.gc-shimmer{position:absolute;inset:0;pointer-events:none;background:linear-gradient(115deg,transparent 30%,rgba(249,168,201,.04) 50%,transparent 70%);animation:gc-shim 4s ease-in-out infinite}
+@keyframes gc-shim{0%,100%{transform:translateX(-100%)}50%{transform:translateX(100%)}}
+.gc-top{margin-bottom:20px}
+.gc-from-badge{display:inline-block;font-family:"Montserrat",sans-serif;font-weight:300;font-size:.72rem;letter-spacing:.18em;color:rgba(212,175,122,.55);text-transform:uppercase;border:1px solid rgba(212,175,122,.2);border-radius:30px;padding:4px 14px;margin-bottom:18px}
+.gc-amount{font-family:"Dancing Script",cursive;font-size:clamp(3.4rem,10vw,5.5rem);line-height:1;background:linear-gradient(135deg,#f9a8c9,#ffd6e7,#d4af7a);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.gc-cents{font-size:50%}
+.gc-label{font-family:"Montserrat",sans-serif;font-weight:300;font-size:.78rem;letter-spacing:.3em;color:rgba(249,168,201,.35);text-transform:uppercase;margin-top:4px}
+.gc-divider-line{display:flex;align-items:center;justify-content:center;gap:8px;margin:18px 0}
+.gc-divider-line::before,.gc-divider-line::after{content:"";flex:1;height:1px;background:rgba(249,168,201,.12)}
+.gc-divider-dot{width:5px;height:5px;border-radius:50%;background:rgba(249,168,201,.2)}
+.gc-bottom{display:flex;flex-direction:column;gap:10px;margin-bottom:24px}
+.gc-info-row{display:flex;justify-content:space-between;align-items:center;padding:7px 0;border-bottom:1px solid rgba(249,168,201,.06)}
+.gc-info-label{font-family:"Montserrat",sans-serif;font-weight:300;font-size:.72rem;letter-spacing:.15em;color:rgba(249,168,201,.3);text-transform:uppercase}
+.gc-info-val{font-family:"Lora",serif;font-size:.9rem;color:rgba(255,240,240,.65)}
+.gc-email-hint{color:rgba(212,175,122,.65)!important;font-style:italic}
+.gc-btn{display:block;width:100%;padding:14px 24px;border:none;border-radius:50px;background:linear-gradient(135deg,var(--deep-rose),#b5005b);color:#fff;font-family:"Montserrat",sans-serif;font-weight:500;font-size:.9rem;letter-spacing:.14em;text-decoration:none;text-align:center;cursor:pointer;box-shadow:0 10px 34px rgba(232,81,122,.45);transition:transform .25s,box-shadow .25s;margin-bottom:16px}
+.gc-btn:hover{transform:translateY(-2px);box-shadow:0 16px 44px rgba(232,81,122,.6)}
+.gc-email-note{font-family:"Lora",serif;font-style:italic;font-size:.78rem;color:rgba(249,168,201,.32);line-height:1.7;text-align:center}
+.gc-teaser{margin-top:32px;background:rgba(249,168,201,.04);border:1px solid rgba(249,168,201,.12);border-radius:20px;padding:clamp(18px,3vw,28px) clamp(20px,4vw,32px);display:flex;flex-direction:column;align-items:center;gap:12px;width:100%}
+.gc-teaser-icon{font-size:clamp(1.8rem,4vw,2.4rem);animation:rose-sway 3s ease-in-out infinite}
+@keyframes rose-sway{0%,100%{transform:rotate(-6deg) scale(1)}50%{transform:rotate(6deg) scale(1.1)}}
+.gc-teaser-text{font-family:"Lora",serif;font-style:italic;font-size:clamp(.86rem,2vw,1.02rem);color:rgba(249,168,201,.55);line-height:1.95;text-align:center}
+.gc-teaser-text strong{color:rgba(249,168,201,.8);font-style:normal}
+
+
+#bgm-switcher{position:fixed;bottom:22px;left:22px;z-index:10000;display:flex;flex-direction:column-reverse;align-items:center;gap:8px}
+#bgm-switch-btn{width:44px;height:44px;border-radius:50%;border:1px solid rgba(249,168,201,.35);background:rgba(17,0,9,.82);backdrop-filter:blur(12px);color:var(--rose);font-size:1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:border-color .3s,transform .2s;box-shadow:0 4px 18px rgba(0,0,0,.5)}
+#bgm-switch-btn:hover{border-color:rgba(249,168,201,.65);transform:scale(1.08)}
+.bgm-track-btn{width:36px;height:36px;border-radius:50%;border:1px solid rgba(249,168,201,.25);background:rgba(17,0,9,.82);backdrop-filter:blur(12px);color:rgba(249,168,201,.65);font-family:'Montserrat',sans-serif;font-size:.65rem;font-weight:500;letter-spacing:.04em;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:border-color .3s,background .3s,transform .2s,opacity .3s;opacity:0;pointer-events:none;transform:scale(.7);box-shadow:0 4px 14px rgba(0,0,0,.5)}
+.bgm-track-btn.active{border-color:var(--rose);color:var(--rose);background:rgba(249,168,201,.1)}
+.bgm-track-btn:hover{border-color:rgba(249,168,201,.55);transform:scale(1.08)}
+#bgm-switcher.open .bgm-track-btn{opacity:1;pointer-events:all;transform:scale(1)}
+#bgm-switcher.open .bgm-track-btn:nth-child(2){transition-delay:.05s}
+#bgm-switcher.open .bgm-track-btn:nth-child(3){transition-delay:.1s}
+#bgm-switcher.open .bgm-track-btn:nth-child(4){transition-delay:.15s}
+
 </style>
 </head>
 <body>
@@ -147,6 +192,14 @@ audio{width:100%;height:40px;border-radius:40px;filter:sepia(.3) hue-rotate(300d
 <div class="star-field" id="stars"></div>
 <div id="transition-overlay"><div class="transition-text" id="transition-text"></div></div>
 <audio id="bgm-audio" loop src="BGM.mp3" style="display:none"></audio>
+
+<div id="bgm-switcher">
+  <button id="bgm-switch-btn" onclick="toggleSwitcher()" title="Change BGM">&#9836;</button>
+  <button class="bgm-track-btn active" id="bgm-t1" onclick="switchBgm(1)">1</button>
+  <button class="bgm-track-btn" id="bgm-t2" onclick="switchBgm(2)">2</button>
+  <button class="bgm-track-btn" id="bgm-t3" onclick="switchBgm(3)">3</button>
+</div>
+
 <div id="bgm-bar" onclick="toggleBgm()"><div class="bgm-dot"></div><span class="bgm-label" id="bgm-label">BGM</span></div>
 
 <div id="lock" onclick="startBgm()">
@@ -221,8 +274,8 @@ audio{width:100%;height:40px;border-radius:40px;filter:sepia(.3) hue-rotate(300d
         </div>
         <div class="photo-caption">
           <div class="caption-icon">&#127750;</div>
-          <div class="caption-text">You walk into a city and somehow make it look more beautiful.</div>
-          <div class="caption-accent">I wish I was there with you.</div>
+          <div class="caption-text">I wish I was there with you.</div>
+          <div class="caption-accent">One day I will be.</div>
         </div>
       </div>
       <div class="photo-row reveal">
@@ -231,8 +284,8 @@ audio{width:100%;height:40px;border-radius:40px;filter:sepia(.3) hue-rotate(300d
         </div>
         <div class="photo-caption">
           <div class="caption-icon">&#10024;</div>
-          <div class="caption-text">Wherever you go, you carry this light with you. I can see it in every photo.</div>
-          <div class="caption-accent">One day I want to be the one taking these.</div>
+          <div class="caption-text">I keep coming back to this photo.</div>
+          <div class="caption-accent">I wish I was the one taking it.</div>
         </div>
       </div>
       <div class="photo-row flip reveal">
@@ -241,8 +294,8 @@ audio{width:100%;height:40px;border-radius:40px;filter:sepia(.3) hue-rotate(300d
         </div>
         <div class="photo-caption">
           <div class="caption-icon">&#128316;</div>
-          <div class="caption-text">Even in a quiet moment, just sitting there — you look stunning.</div>
-          <div class="caption-accent">I want to sit across from you at dinner, every night.</div>
+          <div class="caption-text">I want to be sitting right across from you here.</div>
+          <div class="caption-accent">One day.</div>
         </div>
       </div>
       <div class="photo-row reveal">
@@ -251,8 +304,8 @@ audio{width:100%;height:40px;border-radius:40px;filter:sepia(.3) hue-rotate(300d
         </div>
         <div class="photo-caption">
           <div class="caption-icon">&#127891;</div>
-          <div class="caption-text">You worked so hard to get here. This moment is entirely yours.</div>
-          <div class="caption-accent">Proud of you, my princess.</div>
+          <div class="caption-text">I wish I was there that day.</div>
+          <div class="caption-accent">You look so happy. I love that.</div>
         </div>
       </div>
       <div class="photo-row flip reveal">
@@ -261,8 +314,8 @@ audio{width:100%;height:40px;border-radius:40px;filter:sepia(.3) hue-rotate(300d
         </div>
         <div class="photo-caption">
           <div class="caption-icon">&#127800;</div>
-          <div class="caption-text">You look beautiful in everything you wear. But your smile — that's what I always come back to.</div>
-          <div class="caption-accent">I hope someday I get to see that smile every day.</div>
+          <div class="caption-text">That smile. That's the one I always come back to.</div>
+          <div class="caption-accent">I hope I get to see it in person soon.</div>
         </div>
       </div>
       <div class="photo-row reveal">
@@ -271,8 +324,8 @@ audio{width:100%;height:40px;border-radius:40px;filter:sepia(.3) hue-rotate(300d
         </div>
         <div class="photo-caption">
           <div class="caption-icon">&#128247;</div>
-          <div class="caption-text">All these photos — I looked at them more times than I can count. But what I really want is to be in them with you.</div>
-          <div class="caption-accent">I want our first photo together, more than anything.</div>
+          <div class="caption-text">I've looked at this more times than I can count.</div>
+          <div class="caption-accent">I want our first photo together so badly.</div>
         </div>
       </div>
       <div class="photo-row flip reveal">
@@ -281,8 +334,8 @@ audio{width:100%;height:40px;border-radius:40px;filter:sepia(.3) hue-rotate(300d
         </div>
         <div class="photo-caption">
           <div class="caption-icon">&#9728;&#65039;</div>
-          <div class="caption-text">A summer day, the beach, a glance back — you make it all look like a dream.</div>
-          <div class="caption-accent">Next time, let me be the one taking this photo.</div>
+          <div class="caption-text">I really wish I was there with you.</div>
+          <div class="caption-accent">Next time, let that be me behind the camera.</div>
         </div>
       </div>
       <div class="photo-row reveal">
@@ -291,8 +344,8 @@ audio{width:100%;height:40px;border-radius:40px;filter:sepia(.3) hue-rotate(300d
         </div>
         <div class="photo-caption">
           <div class="caption-icon">&#127758;</div>
-          <div class="caption-text">I already imagine us travelling the world together — Orlando, Japan, Beijing, Vietnam, Italy. You and me, side by side.</div>
-          <div class="caption-accent">Every city would be more beautiful with you in it.</div>
+          <div class="caption-text">I think about travelling with you all the time.</div>
+          <div class="caption-accent">Every place would feel different with you there.</div>
         </div>
       </div>
     </div>
@@ -310,6 +363,55 @@ audio{width:100%;height:40px;border-radius:40px;filter:sepia(.3) hue-rotate(300d
         <div class="audio-card reveal">
           <div class="audio-label">&#127925; Ryuichi Sakamoto &mdash; Merry Christmas Mr. Lawrence</div>
           <audio controls src="BGM.mp3"></audio>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+  <section class="section gift-section">
+    <div class="section-inner">
+      <div class="gift-eyebrow reveal">&#127873; a little something for you</div>
+      <div class="gift-title reveal">One Gift, Delivered With Love</div>
+      <div class="gift-subtitle reveal">This is just the beginning &mdash; I have another surprise waiting for you tomorrow when we meet. &#127800;</div>
+      <div class="gift-card-wrap reveal">
+        <div class="gc-ribbon"><span class="gc-ribbon-text">Happy Birthday, Elsie &#9825;</span></div>
+        <div class="gift-card">
+          <div class="gc-shimmer"></div>
+          <div class="gc-top">
+            <div class="gc-from-badge">from Chris, with love &#10022;</div>
+            <div class="gc-amount">$200<span class="gc-cents">.00</span></div>
+            <div class="gc-label">eGift Card</div>
+          </div>
+          <div class="gc-divider-line">
+            <span class="gc-divider-dot"></span><span class="gc-divider-dot"></span>
+            <span class="gc-divider-dot"></span><span class="gc-divider-dot"></span>
+            <span class="gc-divider-dot"></span><span class="gc-divider-dot"></span>
+            <span class="gc-divider-dot"></span><span class="gc-divider-dot"></span>
+          </div>
+          <div class="gc-bottom">
+            <div class="gc-info-row">
+              <span class="gc-info-label">Order</span>
+              <span class="gc-info-val">#CNPZDU36VE6</span>
+            </div>
+            <div class="gc-info-row">
+              <span class="gc-info-label">Purchased</span>
+              <span class="gc-info-val">25 Mar 2026</span>
+            </div>
+            <div class="gc-info-row">
+              <span class="gc-info-label">Access via</span>
+              <span class="gc-info-val gc-email-hint">your email &#128140;</span>
+            </div>
+          </div>
+          <a class="gc-btn" href="https://eGft.in/D6d88iQDLQ51uI2" target="_blank" rel="noopener">Open Your Gift &nbsp;&#10230;</a>
+          <div class="gc-email-note">&#9432;&nbsp; Check your email inbox to redeem this gift &mdash; the link was sent directly to you.</div>
+        </div>
+        <div class="gc-teaser">
+          <div class="gc-teaser-icon">&#127800;</div>
+          <div class="gc-teaser-text">
+            <strong>But wait &mdash; this isn&rsquo;t everything.</strong><br>
+            Tomorrow, when we finally meet, I&rsquo;ll give you the rest of my love in person.<br>
+            <em>I&rsquo;ve been looking forward to it more than you know.</em>
+          </div>
         </div>
       </div>
     </div>
@@ -371,4 +473,23 @@ function openLightbox(key){document.getElementById('lightbox-img').src=IMAGES[ke
 function closeLightbox(){document.getElementById('lightbox').classList.remove('open');}
 document.getElementById('lightbox').addEventListener('click',function(e){if(e.target===this)closeLightbox();});
 function initReveal(){var obs=new IntersectionObserver(function(entries){entries.forEach(function(e,i){if(e.isIntersecting){setTimeout(function(){e.target.classList.add('show');},i*55);obs.unobserve(e.target);}});},{threshold:.1});document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.reveal-scale').forEach(function(el){obs.observe(el);});}
+
+var currentTrack=1;
+var bgmSources=['BGM.mp3','BGM2.mp3','BGM3.mp3'];
+function toggleSwitcher(){document.getElementById('bgm-switcher').classList.toggle('open');}
+function switchBgm(n){
+  if(currentTrack===n){document.getElementById('bgm-switcher').classList.remove('open');return;}
+  currentTrack=n;
+  var a=document.getElementById('bgm-audio');
+  var wasPlaying=bgmPlaying;
+  a.pause();
+  a.src=bgmSources[n-1];
+  a.load();
+  if(wasPlaying){a.play().catch(function(e){console.log(e);});}
+  document.querySelectorAll('.bgm-track-btn').forEach(function(b,i){
+    b.classList.toggle('active',i===n-1);
+  });
+  document.getElementById('bgm-switcher').classList.remove('open');
+}
+
 </script></body></html>
