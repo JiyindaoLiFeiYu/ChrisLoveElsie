@@ -1,6 +1,5 @@
-<!DOCTYPE html>
+<!DOCTYPE html><html lang="en">
 
-<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -141,37 +140,53 @@ audio{width:100%;height:40px;border-radius:40px;filter:sepia(.3) hue-rotate(300d
 .reveal-scale{opacity:0;transform:scale(.88);transition:opacity 1s ease,transform 1s ease}
 .reveal-scale.show{opacity:1;transform:scale(1)}
 @keyframes shake{0%,100%{transform:none}20%,60%{transform:translateX(-8px)}40%,80%{transform:translateX(8px)}}
-.gift-section{background:linear-gradient(180deg,#110009,#1a0812 50%,#110009);text-align:center}
+/* ── ALO YOGA GIFT CARD SECTION ─────────────────────── */
+.alo-section{background:linear-gradient(180deg,#110009,#150c18 50%,#110009);text-align:center}
+.alo-card{position:relative;width:100%;background:linear-gradient(145deg,#1a0d2e 0%,#130a20 40%,#1e0f2c 100%);border:1px solid rgba(180,140,255,.2);border-top:none;border-radius:0 0 24px 24px;overflow:hidden;padding:clamp(22px,4vw,36px) clamp(24px,5vw,40px) clamp(18px,3vw,28px);box-shadow:0 32px 80px rgba(0,0,0,.7),0 0 0 1px rgba(180,140,255,.06) inset}
+.alo-shimmer{position:absolute;inset:0;pointer-events:none;background:linear-gradient(115deg,transparent 30%,rgba(180,140,255,.05) 50%,transparent 70%);animation:alo-shim 4s ease-in-out infinite}
+@keyframes alo-shim{0%,100%{transform:translateX(-100%)}50%{transform:translateX(100%)}}
+.alo-ribbon{background:linear-gradient(90deg,transparent,rgba(180,140,255,.07),rgba(180,140,255,.14),rgba(180,140,255,.07),transparent);border-top:1px solid rgba(180,140,255,.18);border-bottom:1px solid rgba(180,140,255,.18);width:100%;padding:9px 20px;border-radius:12px 12px 0 0}
+.alo-ribbon-text{font-family:"Dancing Script",cursive;font-size:clamp(1rem,2.5vw,1.25rem);color:rgba(180,140,255,.65);letter-spacing:.06em}
+.alo-from-badge{display:inline-block;font-family:"Montserrat",sans-serif;font-weight:300;font-size:.72rem;letter-spacing:.18em;color:rgba(180,140,255,.55);text-transform:uppercase;border:1px solid rgba(180,140,255,.2);border-radius:30px;padding:4px 14px;margin-bottom:18px}
+.alo-amount{font-family:"Dancing Script",cursive;font-size:clamp(3.4rem,10vw,5.5rem);line-height:1;background:linear-gradient(135deg,#c4a0ff,#e8d5ff,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.alo-label{font-family:"Montserrat",sans-serif;font-weight:300;font-size:.78rem;letter-spacing:.3em;color:rgba(180,140,255,.35);text-transform:uppercase;margin-top:4px}
+.alo-divider-line{display:flex;align-items:center;justify-content:center;gap:8px;margin:18px 0}
+.alo-divider-line::before,.alo-divider-line::after{content:"";flex:1;height:1px;background:rgba(180,140,255,.12)}
+.alo-divider-dot{width:5px;height:5px;border-radius:50%;background:rgba(180,140,255,.2)}
+.alo-info-row{display:flex;justify-content:space-between;align-items:center;padding:7px 0;border-bottom:1px solid rgba(180,140,255,.06)}
+.alo-info-label{font-family:"Montserrat",sans-serif;font-weight:300;font-size:.72rem;letter-spacing:.15em;color:rgba(180,140,255,.3);text-transform:uppercase}
+.alo-info-val{font-family:"Lora",serif;font-size:.9rem;color:rgba(255,240,255,.65)}
+.alo-btn{display:block;width:100%;padding:14px 24px;border:none;border-radius:50px;background:linear-gradient(135deg,#7c3aed,#5b21b6);color:#fff;font-family:"Montserrat",sans-serif;font-weight:500;font-size:.9rem;letter-spacing:.14em;text-decoration:none;text-align:center;cursor:pointer;box-shadow:0 10px 34px rgba(124,58,237,.4);transition:transform .25s,box-shadow .25s;margin-bottom:16px}
+.alo-btn:hover{transform:translateY(-2px);box-shadow:0 16px 44px rgba(124,58,237,.58)}
+.alo-note{font-family:"Lora",serif;font-style:italic;font-size:.78rem;color:rgba(180,140,255,.32);line-height:1.7;text-align:center}
+.alo-teaser{margin-top:32px;background:rgba(180,140,255,.04);border:1px solid rgba(180,140,255,.12);border-radius:20px;padding:clamp(18px,3vw,28px) clamp(20px,4vw,32px);display:flex;flex-direction:column;align-items:center;gap:12px;width:100%}
+.alo-teaser-icon{font-size:clamp(1.8rem,4vw,2.4rem);animation:alo-icon-sway 3.5s ease-in-out infinite}
+@keyframes alo-icon-sway{0%,100%{transform:rotate(-5deg) scale(1)}50%{transform:rotate(5deg) scale(1.08)}}
+.alo-teaser-text{font-family:"Lora",serif;font-style:italic;font-size:clamp(.86rem,2vw,1.02rem);color:rgba(180,140,255,.52);line-height:1.95;text-align:center}
+.alo-teaser-text strong{color:rgba(200,170,255,.8);font-style:normal}
+.gift-card-wrap{max-width:400px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:0}
 .gift-eyebrow{font-family:"Montserrat",sans-serif;font-weight:300;font-size:clamp(.68rem,1.8vw,.82rem);letter-spacing:.28em;color:rgba(212,175,122,.5);text-transform:uppercase;margin-bottom:10px}
 .gift-title{font-family:"Dancing Script",cursive;font-size:clamp(2rem,5.5vw,3.6rem);color:var(--rose);margin-bottom:10px;line-height:1.2}
 .gift-subtitle{font-family:"Lora",serif;font-style:italic;font-size:clamp(.88rem,2vw,1.1rem);color:rgba(249,168,201,.5);max-width:460px;margin:0 auto clamp(30px,5vw,56px);line-height:1.9}
-.gift-card-wrap{max-width:400px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:0}
-.gc-ribbon{background:linear-gradient(90deg,transparent,rgba(249,168,201,.08),rgba(249,168,201,.15),rgba(249,168,201,.08),transparent);border-top:1px solid rgba(249,168,201,.18);border-bottom:1px solid rgba(249,168,201,.18);width:100%;padding:9px 20px;border-radius:12px 12px 0 0}
-.gc-ribbon-text{font-family:"Dancing Script",cursive;font-size:clamp(1rem,2.5vw,1.25rem);color:rgba(249,168,201,.6);letter-spacing:.06em}
-.gift-card{position:relative;width:100%;background:linear-gradient(145deg,#2a0b1e 0%,#1e0816 40%,#280d1c 100%);border:1px solid rgba(249,168,201,.22);border-top:none;border-radius:0 0 24px 24px;overflow:hidden;padding:clamp(22px,4vw,36px) clamp(24px,5vw,40px) clamp(18px,3vw,28px);box-shadow:0 32px 80px rgba(0,0,0,.7),0 0 0 1px rgba(249,168,201,.06) inset}
-.gc-shimmer{position:absolute;inset:0;pointer-events:none;background:linear-gradient(115deg,transparent 30%,rgba(249,168,201,.04) 50%,transparent 70%);animation:gc-shim 4s ease-in-out infinite}
-@keyframes gc-shim{0%,100%{transform:translateX(-100%)}50%{transform:translateX(100%)}}
 .gc-top{margin-bottom:20px}
-.gc-from-badge{display:inline-block;font-family:"Montserrat",sans-serif;font-weight:300;font-size:.72rem;letter-spacing:.18em;color:rgba(212,175,122,.55);text-transform:uppercase;border:1px solid rgba(212,175,122,.2);border-radius:30px;padding:4px 14px;margin-bottom:18px}
-.gc-amount{font-family:"Dancing Script",cursive;font-size:clamp(3.4rem,10vw,5.5rem);line-height:1;background:linear-gradient(135deg,#f9a8c9,#ffd6e7,#d4af7a);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.gc-cents{font-size:50%}
-.gc-label{font-family:"Montserrat",sans-serif;font-weight:300;font-size:.78rem;letter-spacing:.3em;color:rgba(249,168,201,.35);text-transform:uppercase;margin-top:4px}
-.gc-divider-line{display:flex;align-items:center;justify-content:center;gap:8px;margin:18px 0}
-.gc-divider-line::before,.gc-divider-line::after{content:"";flex:1;height:1px;background:rgba(249,168,201,.12)}
-.gc-divider-dot{width:5px;height:5px;border-radius:50%;background:rgba(249,168,201,.2)}
 .gc-bottom{display:flex;flex-direction:column;gap:10px;margin-bottom:24px}
-.gc-info-row{display:flex;justify-content:space-between;align-items:center;padding:7px 0;border-bottom:1px solid rgba(249,168,201,.06)}
-.gc-info-label{font-family:"Montserrat",sans-serif;font-weight:300;font-size:.72rem;letter-spacing:.15em;color:rgba(249,168,201,.3);text-transform:uppercase}
-.gc-info-val{font-family:"Lora",serif;font-size:.9rem;color:rgba(255,240,240,.65)}
-.gc-email-hint{color:rgba(212,175,122,.65)!important;font-style:italic}
-.gc-btn{display:block;width:100%;padding:14px 24px;border:none;border-radius:50px;background:linear-gradient(135deg,var(--deep-rose),#b5005b);color:#fff;font-family:"Montserrat",sans-serif;font-weight:500;font-size:.9rem;letter-spacing:.14em;text-decoration:none;text-align:center;cursor:pointer;box-shadow:0 10px 34px rgba(232,81,122,.45);transition:transform .25s,box-shadow .25s;margin-bottom:16px}
-.gc-btn:hover{transform:translateY(-2px);box-shadow:0 16px 44px rgba(232,81,122,.6)}
-.gc-email-note{font-family:"Lora",serif;font-style:italic;font-size:.78rem;color:rgba(249,168,201,.32);line-height:1.7;text-align:center}
-.gc-teaser{margin-top:32px;background:rgba(249,168,201,.04);border:1px solid rgba(249,168,201,.12);border-radius:20px;padding:clamp(18px,3vw,28px) clamp(20px,4vw,32px);display:flex;flex-direction:column;align-items:center;gap:12px;width:100%}
-.gc-teaser-icon{font-size:clamp(1.8rem,4vw,2.4rem);animation:rose-sway 3s ease-in-out infinite}
-@keyframes rose-sway{0%,100%{transform:rotate(-6deg) scale(1)}50%{transform:rotate(6deg) scale(1.1)}}
-.gc-teaser-text{font-family:"Lora",serif;font-style:italic;font-size:clamp(.86rem,2vw,1.02rem);color:rgba(249,168,201,.55);line-height:1.95;text-align:center}
-.gc-teaser-text strong{color:rgba(249,168,201,.8);font-style:normal}
+/* ── SINCE SECTION ─────────────────────────────────── */
+.since-section{background:linear-gradient(180deg,#110009 0%,#1e0616 50%,#110009 100%);text-align:center;padding:clamp(70px,11vw,130px) clamp(20px,5vw,80px)}
+.since-inner{max-width:760px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:clamp(16px,3vw,28px)}
+.since-eyebrow{font-family:'Montserrat',sans-serif;font-weight:300;font-size:clamp(.65rem,1.6vw,.8rem);letter-spacing:.3em;color:rgba(212,175,122,.45);text-transform:uppercase}
+.since-title{font-family:'Dancing Script',cursive;font-size:clamp(1.9rem,5.5vw,3.8rem);color:var(--rose);line-height:1.2;filter:drop-shadow(0 0 22px rgba(249,168,201,.3))}
+.since-sub{font-family:'Lora',serif;font-style:italic;font-size:clamp(.82rem,1.9vw,1rem);color:rgba(249,168,201,.38);letter-spacing:.06em}
+.since-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(10px,2.5vw,22px);width:100%;margin-top:8px}
+@media(max-width:560px){.since-grid{grid-template-columns:repeat(2,1fr)}}
+.since-card{position:relative;background:rgba(249,168,201,.03);border:1px solid rgba(249,168,201,.12);border-radius:clamp(16px,2.5vw,24px);padding:clamp(18px,3vw,30px) clamp(12px,2vw,20px) clamp(14px,2.5vw,24px);overflow:hidden;transition:border-color .4s,transform .4s}
+.since-card::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(249,168,201,.06) 0%,transparent 70%);pointer-events:none}
+.since-card:hover{border-color:rgba(249,168,201,.28);transform:translateY(-4px)}
+.since-card-icon{font-size:clamp(1.3rem,2.5vw,1.8rem);margin-bottom:10px;display:block}
+.since-val{font-family:'Dancing Script',cursive;font-size:clamp(2rem,5vw,3.4rem);line-height:1;background:linear-gradient(135deg,#f9a8c9,#ffd6e7,#d4af7a);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;display:block;min-height:1.1em}
+.since-unit{font-family:'Montserrat',sans-serif;font-weight:300;font-size:clamp(.6rem,1.4vw,.75rem);letter-spacing:.22em;color:rgba(249,168,201,.35);text-transform:uppercase;margin-top:6px;display:block}
+.since-pulse{position:absolute;bottom:10px;right:12px;width:6px;height:6px;border-radius:50%;background:var(--rose);animation:since-blink 1s ease-in-out infinite}
+@keyframes since-blink{0%,100%{opacity:.25;transform:scale(1)}50%{opacity:1;transform:scale(1.4)}}
+.since-note{font-family:'Lora',serif;font-style:italic;font-size:clamp(.78rem,1.7vw,.92rem);color:rgba(249,168,201,.32);line-height:1.8;max-width:420px;margin-top:4px}
 #bgm-switcher{position:fixed;bottom:22px;left:22px;z-index:10000;display:flex;flex-direction:column-reverse;align-items:center;gap:8px}
 #bgm-switch-btn{width:44px;height:44px;border-radius:50%;border:1px solid rgba(249,168,201,.35);background:rgba(17,0,9,.82);backdrop-filter:blur(12px);color:var(--rose);font-size:1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:border-color .3s,transform .2s;box-shadow:0 4px 18px rgba(0,0,0,.5)}
 #bgm-switch-btn:hover{border-color:rgba(249,168,201,.65);transform:scale(1.08)}
@@ -182,46 +197,17 @@ audio{width:100%;height:40px;border-radius:40px;filter:sepia(.3) hue-rotate(300d
 #bgm-switcher.open .bgm-track-btn:nth-child(2){transition-delay:.05s}
 #bgm-switcher.open .bgm-track-btn:nth-child(3){transition-delay:.1s}
 #bgm-switcher.open .bgm-track-btn:nth-child(4){transition-delay:.15s}
-
-/* ── SINCE SECTION ─────────────────────────────────── */
-.since-section{background:linear-gradient(180deg,#110009 0%,#1e0616 50%,#110009 100%);text-align:center;padding:clamp(70px,11vw,130px) clamp(20px,5vw,80px)}
-.since-inner{max-width:760px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:clamp(16px,3vw,28px)}
-.since-eyebrow{font-family:‘Montserrat’,sans-serif;font-weight:300;font-size:clamp(.65rem,1.6vw,.8rem);letter-spacing:.3em;color:rgba(212,175,122,.45);text-transform:uppercase}
-.since-title{font-family:‘Dancing Script’,cursive;font-size:clamp(1.9rem,5.5vw,3.8rem);color:var(–rose);line-height:1.2;filter:drop-shadow(0 0 22px rgba(249,168,201,.3))}
-.since-sub{font-family:‘Lora’,serif;font-style:italic;font-size:clamp(.82rem,1.9vw,1rem);color:rgba(249,168,201,.38);letter-spacing:.06em}
-.since-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(10px,2.5vw,22px);width:100%;margin-top:8px}
-@media(max-width:560px){.since-grid{grid-template-columns:repeat(2,1fr)}}
-.since-card{position:relative;background:rgba(249,168,201,.03);border:1px solid rgba(249,168,201,.12);border-radius:clamp(16px,2.5vw,24px);padding:clamp(18px,3vw,30px) clamp(12px,2vw,20px) clamp(14px,2.5vw,24px);overflow:hidden;transition:border-color .4s,transform .4s}
-.since-card::before{content:’’;position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(249,168,201,.06) 0%,transparent 70%);pointer-events:none}
-.since-card:hover{border-color:rgba(249,168,201,.28);transform:translateY(-4px)}
-.since-card-icon{font-size:clamp(1.3rem,2.5vw,1.8rem);margin-bottom:10px;display:block}
-.since-val{font-family:‘Dancing Script’,cursive;font-size:clamp(2rem,5vw,3.4rem);line-height:1;background:linear-gradient(135deg,#f9a8c9,#ffd6e7,#d4af7a);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;display:block;min-height:1.1em}
-.since-unit{font-family:‘Montserrat’,sans-serif;font-weight:300;font-size:clamp(.6rem,1.4vw,.75rem);letter-spacing:.22em;color:rgba(249,168,201,.35);text-transform:uppercase;margin-top:6px;display:block}
-.since-pulse{position:absolute;bottom:10px;right:12px;width:6px;height:6px;border-radius:50%;background:var(–rose);animation:since-blink 1s ease-in-out infinite}
-@keyframes since-blink{0%,100%{opacity:.25;transform:scale(1)}50%{opacity:1;transform:scale(1.4)}}
-.since-note{font-family:‘Lora’,serif;font-style:italic;font-size:clamp(.78rem,1.7vw,.92rem);color:rgba(249,168,201,.32);line-height:1.8;max-width:420px;margin-top:4px}
 </style>
-
 </head>
-<body>
-
-<canvas id="hearts-canvas"></canvas>
-
+<body><canvas id="hearts-canvas"></canvas>
 <div class="star-field" id="stars"></div>
-<div id="transition-overlay"><div class="transition-text" id="transition-text"></div></div>
-
-<audio id="bgm-audio" loop src="BGM.mp3" style="display:none"></audio>
-
+<div id="transition-overlay"><div class="transition-text" id="transition-text"></div></div><audio id="bgm-audio" loop src="BGM.mp3" style="display:none"></audio>
 <div id="bgm-switcher">
 <button id="bgm-switch-btn" onclick="toggleSwitcher()" title="Change BGM">&#9836;</button>
 <button class="bgm-track-btn active" id="bgm-t1" onclick="switchBgm(1)">1</button>
 <button class="bgm-track-btn" id="bgm-t2" onclick="switchBgm(2)">2</button>
 <button class="bgm-track-btn" id="bgm-t3" onclick="switchBgm(3)">3</button>
-</div>
-
-<div id="bgm-bar" onclick="toggleBgm()"><div class="bgm-dot"></div><span class="bgm-label" id="bgm-label">BGM</span></div>
-
-<div id="lock" onclick="startBgm()">
+</div><div id="bgm-bar" onclick="toggleBgm()"><div class="bgm-dot"></div><span class="bgm-label" id="bgm-label">BGM</span></div><div id="lock" onclick="startBgm()">
 <div class="lock-ring" style="width:320px;height:320px;top:50%;left:50%;margin-top:-160px;margin-left:-160px"></div>
 <div class="lock-ring" style="width:480px;height:480px;top:50%;left:50%;margin-top:-240px;margin-left:-240px;animation-delay:.9s"></div>
 <div class="lock-ring" style="width:640px;height:640px;top:50%;left:50%;margin-top:-320px;margin-left:-320px;animation-delay:1.8s"></div>
@@ -236,11 +222,7 @@ audio{width:100%;height:40px;border-radius:40px;filter:sepia(.3) hue-rotate(300d
 <div id="lockErr" class="lock-err hidden">Hmm... not quite right &#127800;</div>
 </div>
 </div>
-</div>
-
-<div id="main">
-
-<section class="hero">
+</div><div id="main"><section class="hero">
 <div class="hero-bg-photos" id="heroBg"></div>
 <div class="hero-gradient"></div>
 <div class="hero-content">
@@ -252,11 +234,7 @@ audio{width:100%;height:40px;border-radius:40px;filter:sepia(.3) hue-rotate(300d
 <div class="hero-aries">&#9800; aries &middot; march 27 &middot; always blooming</div>
 </div>
 <div class="scroll-hint"><span>scroll</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12l7 7 7-7"/></svg></div>
-</section>
-
-<div class="divider"></div>
-
-<section class="section love-section">
+</section><div class="divider"></div><section class="section love-section">
 <div class="section-inner">
 <div class="love-grid">
 <div class="love-photo-wrap reveal-left"><img class="love-photo" src="97b667dcfc43f05a9a5bfb75c5ba1cb1.JPG" alt="Elsie"><div class="love-photo-accent"></div>
@@ -271,39 +249,23 @@ audio{width:100%;height:40px;border-radius:40px;filter:sepia(.3) hue-rotate(300d
 </div>
 </div>
 </div>
-</section>
-
-<div class="divider"></div>
-
-<section class="section coder-section">
+</section><div class="divider"></div><section class="section coder-section">
 <div class="coder-inner">
 <div style="font-size:clamp(2rem,5vw,3rem)" class="reveal">&#128187;</div>
 <div class="coder-quote reveal">&ldquo;You said you don&rsquo;t love me yet &mdash;<br>and that&rsquo;s okay.&rdquo;</div>
 <div class="coder-sub reveal">I will use every bit of energy I have to make you fall in love with me.<br>This is a programmer&rsquo;s romance &mdash; patient, precise, and never giving up.</div>
-<pre class="coder-code reveal">while (!elsie.lovesChris) {
-
-chris.tryHarder();
+<pre class="coder-code reveal">while (!elsie.lovesChris) {chris.tryHarder();
 chris.beMoreRomantic();
 chris.neverGiveUp();
-
 }</pre>
-
 <div class="coder-sub reveal">I&rsquo;ve already started imagining us travelling the world together &mdash;<br>Orlando. Japan. Beijing. Vietnam. Italy.<br>You and me, side by side, in every city, in every photo.</div>
 <div class="coder-sig reveal">Love you &mdash; Chris &#127800;</div>
 </div>
-</section>
-
-<div class="divider"></div>
-
-<!-- ── TIME SINCE SECTION ──────────────────────────── -->
-
-<section class="since-section">
+</section><div class="divider"></div><!-- ── TIME SINCE SECTION ──────────────────────────── --><section class="since-section">
 <div class="since-inner">
 <div class="since-eyebrow reveal">&#9825; counting every moment</div>
 <div class="since-title reveal">Us, Since March 17, 2026</div>
-<div class="since-sub reveal">the clock started the day you came into my life</div>
-
-<div class="since-grid reveal">
+<div class="since-sub reveal">the clock started the day you came into my life</div><div class="since-grid reveal">
   <div class="since-card">
     <span class="since-card-icon">&#127757;</span>
     <span class="since-val" id="sc-days">0</span>
@@ -328,16 +290,10 @@ chris.neverGiveUp();
     <span class="since-unit">Seconds</span>
     <div class="since-pulse" style="animation-delay:.1s"></div>
   </div>
-</div>
-
-<div class="since-note reveal">Every second that passes is one more second<br>I&rsquo;ve spent thinking about you. &#127800;</div>
+</div><div class="since-note reveal">Every second that passes is one more second<br>I&rsquo;ve spent thinking about you. &#127800;</div>
 </div>
 </section>
-<!-- ── END TIME SINCE ─────────────────────────────── -->
-
-<div class="divider"></div>
-
-<section class="section photo-story">
+<!-- ── END TIME SINCE ─────────────────────────────── --><div class="divider"></div><section class="section photo-story">
 <div class="photo-story-inner">
 <div class="photo-row flip reveal">
 <div class="photo-story-img-wrap" onclick="openLightbox('elsie2')"><img class="photo-story-img" src="5d3c734a12d2bdb358378a00c2a1a480.JPG" alt=""><div class="zoom-hint">tap &#10022;</div>
@@ -419,11 +375,7 @@ chris.neverGiveUp();
 </div>
 </div>
 </div>
-</section>
-
-<div class="divider"></div>
-
-<section class="section audio-section">
+</section><div class="divider"></div><section class="section audio-section">
 <div class="section-inner">
 <div class="audio-title reveal">A message just for you</div>
 <div class="audio-sub reveal">close your eyes &amp; press play &#127911;</div>
@@ -438,54 +390,47 @@ chris.neverGiveUp();
 </div>
 </div>
 </div>
-</section>
-
-<div class="divider"></div>
-
-<section class="section gift-section">
+</section><div class="divider"></div><!-- ── ALO YOGA GIFT CARD SECTION ─────────────────────── --><section class="section alo-section">
 <div class="section-inner">
 <div class="gift-eyebrow reveal">&#127873; a little something for you</div>
-<div class="gift-title reveal">One Gift, Delivered With Love</div>
-<div class="gift-subtitle reveal">This is just the beginning &mdash; I have another surprise waiting for you tomorrow when we meet. &#127800;</div>
+<div class="gift-title reveal" style="background:linear-gradient(135deg,#c4a0ff,#e8d5ff,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">For My Barre Princess</div>
+<div class="gift-subtitle reveal" style="color:rgba(180,140,255,.5);">Since the first day we walked in ALO together, you talked about your barre classes, you said everyone in your class wear ALO clothing. I want my princess to have a fresh new set to wear when she goes. This is just the beginning &mdash; I have another surprise waiting for you tomorrow when we meet. &#127800;</div>
 <div class="gift-card-wrap reveal">
-<div class="gc-ribbon"><span class="gc-ribbon-text">Happy Birthday, Elsie &#9825;</span></div>
-<div class="gift-card">
-<div class="gc-shimmer"></div>
+<div class="alo-ribbon"><span class="alo-ribbon-text">Go shine at barre, Elsie &#9825;</span></div>
+<div class="alo-card">
+<div class="alo-shimmer"></div>
 <div class="gc-top">
-<div class="gc-from-badge">from Chris, with love &#10022;</div>
-<div class="gc-amount">$200<span class="gc-cents">.00</span></div>
-<div class="gc-label">eGift Card</div>
+<div class="alo-from-badge">from Chris, with love &#10022;</div>
+<div class="alo-amount">$200<span style="font-size:50%">.00</span></div>
+<div class="alo-label">Alo Yoga eGift Card</div>
 </div>
-<div class="gc-divider-line">
-<span class="gc-divider-dot"></span><span class="gc-divider-dot"></span>
-<span class="gc-divider-dot"></span><span class="gc-divider-dot"></span>
-<span class="gc-divider-dot"></span><span class="gc-divider-dot"></span>
-<span class="gc-divider-dot"></span><span class="gc-divider-dot"></span>
+<div class="alo-divider-line">
+<span class="alo-divider-dot"></span><span class="alo-divider-dot"></span>
+<span class="alo-divider-dot"></span><span class="alo-divider-dot"></span>
+<span class="alo-divider-dot"></span><span class="alo-divider-dot"></span>
+<span class="alo-divider-dot"></span><span class="alo-divider-dot"></span>
 </div>
-<div class="gc-bottom">
-<div class="gc-info-row">
-<span class="gc-info-label">Access via</span>
-<span class="gc-info-val gc-email-hint">my email &#128140;</span>
+<div class="gc-bottom" style="margin-bottom:24px">
+<div class="alo-info-row">
+<span class="alo-info-label">Redeemable at</span>
+<span class="alo-info-val">aloyoga.com</span>
 </div>
 </div>
-<a class="gc-btn" href="https://eGft.in/D6d88iQDLQ51uI2" target="_blank" rel="noopener">Open Your Gift &nbsp;&#10230;</a>
-<div class="gc-email-note">&#9432;&nbsp; Click the button above, then enter the email I sent you on Instagram Message to access your gift.</div>
+<a class="alo-btn" href="https://www.aloyoga.com/gift_cards/21852813/a88a60962eb92ada7b616a5011dea035" target="_blank" rel="noopener">Open Your Alo Gift &nbsp;&#10230;</a>
+<div class="alo-note">&#9432;&nbsp; Click above to redeem your Alo Yoga gift card. Shop anything you love &mdash; leggings, sports bras, everything for barre. &#128155;</div>
 </div>
-<div class="gc-teaser">
-<div class="gc-teaser-icon">&#127800;</div>
-<div class="gc-teaser-text">
-<strong>But wait &mdash; this isn&rsquo;t everything.</strong><br>
-Tomorrow, when we finally meet, I&rsquo;ll give you the rest of my love in person.<br>
-<em>I&rsquo;ve been looking forward to it more than you know.</em>
+<div class="alo-teaser">
+<div class="alo-teaser-icon">&#129504;</div>
+<div class="alo-teaser-text">
+<strong>Wear it to barre and think of me.</strong><br>
+I want to be the reason you smile when you&rsquo;re getting ready for class.<br>
+<em>One day I&rsquo;ll be there cheering you on in person.</em>
 </div>
 </div>
 </div>
 </div>
 </section>
-
-<div class="divider"></div>
-
-<section class="section wish-section">
+<!-- ── END ALO YOGA SECTION ─────────────────────────── --><div class="divider"></div><section class="section wish-section">
 <div class="section-inner">
 <span class="wish-cake reveal-scale">&#127874;</span>
 <div class="wish-main reveal">Happy Birthday, Elsie!</div>
@@ -499,16 +444,10 @@ together, side by side, everywhere in this world. &#127758;&#127800;
 </div>
 <img class="footer-photo reveal" src="56ce7fbd5766e9c3fef01ce5713ca1da.JPG" alt="Elsie"><div class="footer-sig reveal">With all my love &mdash; Chris &#9825;</div>
 </div>
-</section>
-
-</div>
-
-<div id="lightbox">
+</section></div><div id="lightbox">
 <button id="lightbox-close" onclick="closeLightbox()">&#10005;</button>
 <img id="lightbox-img" src="" alt="">
-</div>
-
-<script>
+</div><script>
 var IMAGES={
 cover:'IMG_2676.jpg',
 chris1:'Chris1.jpg',
@@ -525,68 +464,67 @@ elsie_love:'97b667dcfc43f05a9a5bfb75c5ba1cb1.JPG',
 elsie_footer:'56ce7fbd5766e9c3fef01ce5713ca1da.JPG'
 };
 
-(function(){var sf=document.getElementById('stars');for(var i=0;i<80;i++){var s=document.createElement('div');s.className='star';var sz=Math.random()*2.2+.4;s.style.cssText='width:'+sz+'px;height:'+sz+'px;left:'+(Math.random()*100)+'%;top:'+(Math.random()*100)+'%;--op:'+(Math.random()*.6+.15)+';animation-duration:'+(Math.random()*4+2)+'s;animation-delay:'+(Math.random()*6)+'s';sf.appendChild(s);}})();
+(function(){var sf=document.getElementById(‘stars’);for(var i=0;i<80;i++){var s=document.createElement(‘div’);s.className=‘star’;var sz=Math.random()*2.2+.4;s.style.cssText=‘width:’+sz+‘px;height:’+sz+‘px;left:’+(Math.random()*100)+’%;top:’+(Math.random()*100)+’%;–op:’+(Math.random()*.6+.15)+’;animation-duration:’+(Math.random()*4+2)+‘s;animation-delay:’+(Math.random()*6)+‘s’;sf.appendChild(s);}})();
 
-(function(){var c=document.getElementById('lockPetals');var p=['\uD83C\uDF38','\uD83C\uDF3A','\uD83D\uDCAE','\u273F','\uD83D\uDC97','\uD83D\uDC95','\u2743','\uD83C\uDF37'];for(var i=0;i<22;i++){var el=document.createElement('div');el.className='lock-petal';el.textContent=p[Math.floor(Math.random()*p.length)];el.style.cssText='left:'+(Math.random()*100)+'%;font-size:'+(Math.random()*16+10)+'px;animation-duration:'+(Math.random()*8+7)+'s;animation-delay:'+(Math.random()*10)+'s';c.appendChild(el);}})();
+(function(){var c=document.getElementById(‘lockPetals’);var p=[’\uD83C\uDF38’,’\uD83C\uDF3A’,’\uD83D\uDCAE’,’\u273F’,’\uD83D\uDC97’,’\uD83D\uDC95’,’\u2743’,’\uD83C\uDF37’];for(var i=0;i<22;i++){var el=document.createElement(‘div’);el.className=‘lock-petal’;el.textContent=p[Math.floor(Math.random()*p.length)];el.style.cssText=‘left:’+(Math.random()*100)+’%;font-size:’+(Math.random()*16+10)+‘px;animation-duration:’+(Math.random()*8+7)+‘s;animation-delay:’+(Math.random()*10)+‘s’;c.appendChild(el);}})();
 
-(function(){var canvas=document.getElementById('hearts-canvas');var ctx=canvas.getContext('2d');var W,H,hearts=[];function resize(){W=canvas.width=window.innerWidth;H=canvas.height=window.innerHeight}resize();window.addEventListener('resize',resize);function Heart(x,y){this.x=x!=null?x:Math.random()*W;this.y=y!=null?y:H+30;this.size=Math.random()*13+5;this.speed=Math.random()*.75+.3;this.opacity=Math.random()*.38+.08;this.drift=(Math.random()-.5)*1.2;this.wobble=Math.random()*Math.PI*2;this.wobbleSpeed=Math.random()*.04+.01;this.color='hsl('+(Math.random()*30+330)+',85%,'+(Math.random()*15+68)+'%)';}Heart.prototype.draw=function(){ctx.save();ctx.globalAlpha=this.opacity;ctx.fillStyle=this.color;var s=this.size,x=this.x,y=this.y;ctx.beginPath();ctx.moveTo(x,y);ctx.bezierCurveTo(x,y-s*.3,x+s*.5,y-s,x+s*.5,y-s*.65);ctx.bezierCurveTo(x+s*.5,y-s,x+s,y-s,x+s,y-s*.65);ctx.bezierCurveTo(x+s,y-s*.3,x,y,x,y);ctx.bezierCurveTo(x-s,y,x-s,y-s*.3,x-s,y-s*.65);ctx.bezierCurveTo(x-s,y-s,x-s*.5,y-s,x-s*.5,y-s*.65);ctx.bezierCurveTo(x-s*.5,y-s,x,y-s*.3,x,y);ctx.fill();ctx.restore();};Heart.prototype.update=function(){this.wobble+=this.wobbleSpeed;this.x+=this.drift+Math.sin(this.wobble)*.6;this.y-=this.speed;return this.y>-40;};for(var i=0;i<28;i++)hearts.push(new Heart(null,Math.random()*H));function loop(){ctx.clearRect(0,0,W,H);if(Math.random()<.04)hearts.push(new Heart());hearts=hearts.filter(function(h){h.draw();return h.update();});requestAnimationFrame(loop);}loop();})();
+(function(){var canvas=document.getElementById(‘hearts-canvas’);var ctx=canvas.getContext(‘2d’);var W,H,hearts=[];function resize(){W=canvas.width=window.innerWidth;H=canvas.height=window.innerHeight}resize();window.addEventListener(‘resize’,resize);function Heart(x,y){this.x=x!=null?x:Math.random()*W;this.y=y!=null?y:H+30;this.size=Math.random()*13+5;this.speed=Math.random()*.75+.3;this.opacity=Math.random()*.38+.08;this.drift=(Math.random()-.5)*1.2;this.wobble=Math.random()*Math.PI*2;this.wobbleSpeed=Math.random()*.04+.01;this.color=‘hsl(’+(Math.random()*30+330)+’,85%,’+(Math.random()*15+68)+’%)’;}Heart.prototype.draw=function(){ctx.save();ctx.globalAlpha=this.opacity;ctx.fillStyle=this.color;var s=this.size,x=this.x,y=this.y;ctx.beginPath();ctx.moveTo(x,y);ctx.bezierCurveTo(x,y-s*.3,x+s*.5,y-s,x+s*.5,y-s*.65);ctx.bezierCurveTo(x+s*.5,y-s,x+s,y-s,x+s,y-s*.65);ctx.bezierCurveTo(x+s,y-s*.3,x,y,x,y);ctx.bezierCurveTo(x-s,y,x-s,y-s*.3,x-s,y-s*.65);ctx.bezierCurveTo(x-s,y-s,x-s*.5,y-s,x-s*.5,y-s*.65);ctx.bezierCurveTo(x-s*.5,y-s,x,y-s*.3,x,y);ctx.fill();ctx.restore();};Heart.prototype.update=function(){this.wobble+=this.wobbleSpeed;this.x+=this.drift+Math.sin(this.wobble)*.6;this.y-=this.speed;return this.y>-40;};for(var i=0;i<28;i++)hearts.push(new Heart(null,Math.random()*H));function loop(){ctx.clearRect(0,0,W,H);if(Math.random()<.04)hearts.push(new Heart());hearts=hearts.filter(function(h){h.draw();return h.update();});requestAnimationFrame(loop);}loop();})();
 
-function initHeroBg(){var bg=document.getElementById('heroBg');if(!bg||bg.dataset.init)return;bg.dataset.init='1';var keys=['elsie2','elsie4','elsie5','elsie9','elsie11','elsie12'];var pos=[{l:'2%',t:'8%',w:'130px',h:'180px',r:'-6deg',d:'8s'},{l:'79%',t:'4%',w:'115px',h:'155px',r:'5deg',d:'9s'},{l:'4%',t:'58%',w:'125px',h:'168px',r:'3deg',d:'7s'},{l:'81%',t:'54%',w:'108px',h:'145px',r:'-4deg',d:'10s'},{l:'40%',t:'2%',w:'96px',h:'128px',r:'7deg',d:'8.5s'},{l:'87%',t:'28%',w:'88px',h:'118px',r:'-7deg',d:'11s'}];keys.forEach(function(k,i){if(!pos[i])return;var p=pos[i];var img=document.createElement('img');img.src=IMAGES[k];img.className='hero-float';img.style.cssText='left:'+p.l+';top:'+p.t+';width:'+p.w+';height:'+p.h+';object-fit:cover;border-radius:12px;--r:'+p.r+';animation-duration:'+p.d+';animation-delay:'+(Math.random()*3).toFixed(1)+'s';bg.appendChild(img);});}
+function initHeroBg(){var bg=document.getElementById(‘heroBg’);if(!bg||bg.dataset.init)return;bg.dataset.init=‘1’;var keys=[‘elsie2’,‘elsie4’,‘elsie5’,‘elsie9’,‘elsie11’,‘elsie12’];var pos=[{l:‘2%’,t:‘8%’,w:‘130px’,h:‘180px’,r:’-6deg’,d:‘8s’},{l:‘79%’,t:‘4%’,w:‘115px’,h:‘155px’,r:‘5deg’,d:‘9s’},{l:‘4%’,t:‘58%’,w:‘125px’,h:‘168px’,r:‘3deg’,d:‘7s’},{l:‘81%’,t:‘54%’,w:‘108px’,h:‘145px’,r:’-4deg’,d:‘10s’},{l:‘40%’,t:‘2%’,w:‘96px’,h:‘128px’,r:‘7deg’,d:‘8.5s’},{l:‘87%’,t:‘28%’,w:‘88px’,h:‘118px’,r:’-7deg’,d:‘11s’}];keys.forEach(function(k,i){if(!pos[i])return;var p=pos[i];var img=document.createElement(‘img’);img.src=IMAGES[k];img.className=‘hero-float’;img.style.cssText=‘left:’+p.l+’;top:’+p.t+’;width:’+p.w+’;height:’+p.h+’;object-fit:cover;border-radius:12px;–r:’+p.r+’;animation-duration:’+p.d+’;animation-delay:’+(Math.random()*3).toFixed(1)+‘s’;bg.appendChild(img);});}
 
 var bgmPlaying=false;
-function startBgm(){if(bgmPlaying)return;var a=document.getElementById('bgm-audio');a.volume=0.28;a.play().then(function(){bgmPlaying=true;document.getElementById('bgm-bar').classList.add('visible');updateBgmBar();}).catch(function(e){console.log(e);});}
-function toggleBgm(){var a=document.getElementById('bgm-audio');if(bgmPlaying){a.pause();bgmPlaying=false;}else{a.play();bgmPlaying=true;}updateBgmBar();}
-function updateBgmBar(){var bar=document.getElementById('bgm-bar'),label=document.getElementById('bgm-label');if(bgmPlaying){bar.classList.remove('paused');label.textContent='\u266a BGM';}else{bar.classList.add('paused');label.textContent='\u266a paused';}}
+function startBgm(){if(bgmPlaying)return;var a=document.getElementById(‘bgm-audio’);a.volume=0.28;a.play().then(function(){bgmPlaying=true;document.getElementById(‘bgm-bar’).classList.add(‘visible’);updateBgmBar();}).catch(function(e){console.log(e);});}
+function toggleBgm(){var a=document.getElementById(‘bgm-audio’);if(bgmPlaying){a.pause();bgmPlaying=false;}else{a.play();bgmPlaying=true;}updateBgmBar();}
+function updateBgmBar(){var bar=document.getElementById(‘bgm-bar’),label=document.getElementById(‘bgm-label’);if(bgmPlaying){bar.classList.remove(‘paused’);label.textContent=’\u266a BGM’;}else{bar.classList.add(‘paused’);label.textContent=’\u266a paused’;}}
 
-function tryUnlock(){var val=document.getElementById('lockInput').value.trim().toLowerCase();var err=document.getElementById('lockErr');if(val==='chrisloveelsie0317'){document.getElementById('lock').classList.add('hidden');startBgm();var ov=document.getElementById('transition-overlay');var tt=document.getElementById('transition-text');var msgs=['\uD83C\uDF38','Happy Birthday Elsie \u2665','\uD83C\uDF38'];var idx=0;ov.classList.add('show');tt.textContent=msgs[0];tt.style.animation='none';tt.offsetHeight;tt.style.animation='fade-text 1s ease both';var cycle=setInterval(function(){idx++;if(idx<msgs.length){tt.style.animation='none';tt.offsetHeight;tt.style.animation='fade-text 1s ease both';tt.textContent=msgs[idx];}else{clearInterval(cycle);setTimeout(function(){ov.classList.remove('show');var main=document.getElementById('main');main.style.display='block';main.style.opacity='0';main.style.transition='opacity 1.8s ease';setTimeout(function(){main.style.opacity='1';},60);initHeroBg();spawnConfetti();initReveal();startSinceClock();},900);}},1500);}else{err.classList.remove('hidden');var inp=document.getElementById('lockInput');inp.value='';inp.style.animation='none';inp.offsetHeight;inp.style.animation='shake .4s ease';setTimeout(function(){err.classList.add('hidden');},2800);}}
+function tryUnlock(){var val=document.getElementById(‘lockInput’).value.trim().toLowerCase();var err=document.getElementById(‘lockErr’);if(val===‘chrisloveelsie0317’){document.getElementById(‘lock’).classList.add(‘hidden’);startBgm();var ov=document.getElementById(‘transition-overlay’);var tt=document.getElementById(‘transition-text’);var msgs=[’\uD83C\uDF38’,‘Happy Birthday Elsie \u2665’,’\uD83C\uDF38’];var idx=0;ov.classList.add(‘show’);tt.textContent=msgs[0];tt.style.animation=‘none’;tt.offsetHeight;tt.style.animation=‘fade-text 1s ease both’;var cycle=setInterval(function(){idx++;if(idx<msgs.length){tt.style.animation=‘none’;tt.offsetHeight;tt.style.animation=‘fade-text 1s ease both’;tt.textContent=msgs[idx];}else{clearInterval(cycle);setTimeout(function(){ov.classList.remove(‘show’);var main=document.getElementById(‘main’);main.style.display=‘block’;main.style.opacity=‘0’;main.style.transition=‘opacity 1.8s ease’;setTimeout(function(){main.style.opacity=‘1’;},60);initHeroBg();spawnConfetti();initReveal();startSinceClock();},900);}},1500);}else{err.classList.remove(‘hidden’);var inp=document.getElementById(‘lockInput’);inp.value=’’;inp.style.animation=‘none’;inp.offsetHeight;inp.style.animation=‘shake .4s ease’;setTimeout(function(){err.classList.add(‘hidden’);},2800);}}
 
-document.getElementById('lockInput').addEventListener('keydown',function(e){if(e.key==='Enter')tryUnlock();});
+document.getElementById(‘lockInput’).addEventListener(‘keydown’,function(e){if(e.key===‘Enter’)tryUnlock();});
 
-function spawnConfetti(){var colors=['#f9a8c9','#ffd6e7','#ffb3cc','#d4af7a','#ff85a8','#fff'];var cv=document.createElement('canvas');cv.style.cssText='position:fixed;inset:0;pointer-events:none;z-index:9990';document.body.appendChild(cv);var cx=cv.getContext('2d');var W=cv.width=window.innerWidth,H=cv.height=window.innerHeight;var pp=[];for(var i=0;i<180;i++)pp.push({x:Math.random()*W,y:Math.random()*H-H,r:Math.random()*5+2,color:colors[Math.floor(Math.random()*colors.length)],vy:Math.random()*3.5+1.2,vx:(Math.random()-.5)*2.5,tilt:0,ts:Math.random()*.1+.04,shape:Math.random()>.5?'rect':'circle'});var fr=0;(function draw(){cx.clearRect(0,0,W,H);pp.forEach(function(p){p.tilt+=p.ts;p.y+=p.vy;p.x+=p.vx;if(p.y>H+10)p.y=-10;cx.save();cx.translate(p.x,p.y);cx.rotate(Math.sin(p.tilt)*.35);cx.fillStyle=p.color;cx.globalAlpha=.85;if(p.shape==='circle'){cx.beginPath();cx.arc(0,0,p.r,0,Math.PI*2);cx.fill();}else{cx.fillRect(-p.r/2,-p.r/2,p.r,p.r*2.4);}cx.restore();});fr++;if(fr<320)requestAnimationFrame(draw);else cv.remove();})();}
+function spawnConfetti(){var colors=[’#f9a8c9’,’#ffd6e7’,’#ffb3cc’,’#d4af7a’,’#ff85a8’,’#fff’];var cv=document.createElement(‘canvas’);cv.style.cssText=‘position:fixed;inset:0;pointer-events:none;z-index:9990’;document.body.appendChild(cv);var cx=cv.getContext(‘2d’);var W=cv.width=window.innerWidth,H=cv.height=window.innerHeight;var pp=[];for(var i=0;i<180;i++)pp.push({x:Math.random()*W,y:Math.random()*H-H,r:Math.random()*5+2,color:colors[Math.floor(Math.random()*colors.length)],vy:Math.random()*3.5+1.2,vx:(Math.random()-.5)*2.5,tilt:0,ts:Math.random()*.1+.04,shape:Math.random()>.5?‘rect’:‘circle’});var fr=0;(function draw(){cx.clearRect(0,0,W,H);pp.forEach(function(p){p.tilt+=p.ts;p.y+=p.vy;p.x+=p.vx;if(p.y>H+10)p.y=-10;cx.save();cx.translate(p.x,p.y);cx.rotate(Math.sin(p.tilt)*.35);cx.fillStyle=p.color;cx.globalAlpha=.85;if(p.shape===‘circle’){cx.beginPath();cx.arc(0,0,p.r,0,Math.PI*2);cx.fill();}else{cx.fillRect(-p.r/2,-p.r/2,p.r,p.r*2.4);}cx.restore();});fr++;if(fr<320)requestAnimationFrame(draw);else cv.remove();})();}
 
-function openLightbox(key){document.getElementById('lightbox-img').src=IMAGES[key];document.getElementById('lightbox').classList.add('open');}
-function closeLightbox(){document.getElementById('lightbox').classList.remove('open');}
-document.getElementById('lightbox').addEventListener('click',function(e){if(e.target===this)closeLightbox();});
+function openLightbox(key){document.getElementById(‘lightbox-img’).src=IMAGES[key];document.getElementById(‘lightbox’).classList.add(‘open’);}
+function closeLightbox(){document.getElementById(‘lightbox’).classList.remove(‘open’);}
+document.getElementById(‘lightbox’).addEventListener(‘click’,function(e){if(e.target===this)closeLightbox();});
 
-function initReveal(){var obs=new IntersectionObserver(function(entries){entries.forEach(function(e,i){if(e.isIntersecting){setTimeout(function(){e.target.classList.add('show');},i*55);obs.unobserve(e.target);}});},{threshold:.1});document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.reveal-scale').forEach(function(el){obs.observe(el);});}
+function initReveal(){var obs=new IntersectionObserver(function(entries){entries.forEach(function(e,i){if(e.isIntersecting){setTimeout(function(){e.target.classList.add(‘show’);},i*55);obs.unobserve(e.target);}});},{threshold:.1});document.querySelectorAll(’.reveal,.reveal-left,.reveal-right,.reveal-scale’).forEach(function(el){obs.observe(el);});}
 
 var currentTrack=1;
-var bgmSources=['BGM.mp3','BGM2.mp3','BGM3.mp3'];
-function toggleSwitcher(){document.getElementById('bgm-switcher').classList.toggle('open');}
+var bgmSources=[‘BGM.mp3’,‘BGM2.mp3’,‘BGM3.mp3’];
+function toggleSwitcher(){document.getElementById(‘bgm-switcher’).classList.toggle(‘open’);}
 function switchBgm(n){
-if(currentTrack===n){document.getElementById('bgm-switcher').classList.remove('open');return;}
+if(currentTrack===n){document.getElementById(‘bgm-switcher’).classList.remove(‘open’);return;}
 currentTrack=n;
-var a=document.getElementById('bgm-audio');
+var a=document.getElementById(‘bgm-audio’);
 var wasPlaying=bgmPlaying;
 a.pause();
 a.src=bgmSources[n-1];
 a.load();
 if(wasPlaying){a.play().catch(function(e){console.log(e);});}
-document.querySelectorAll('.bgm-track-btn').forEach(function(b,i){
-b.classList.toggle('active',i===n-1);
+document.querySelectorAll(’.bgm-track-btn’).forEach(function(b,i){
+b.classList.toggle(‘active’,i===n-1);
 });
-document.getElementById('bgm-switcher').classList.remove('open');
+document.getElementById(‘bgm-switcher’).classList.remove(‘open’);
 }
 
 /* ── SINCE CLOCK ──────────────────────────────────── */
 function startSinceClock(){
-  var start=new Date('2026-03-17T00:00:00');
-  function tick(){
-    var now=new Date();
-    var diff=Math.max(0,Math.floor((now-start)/1000));
-    var d=Math.floor(diff/86400);
-    var h=Math.floor((diff%86400)/3600);
-    var m=Math.floor((diff%3600)/60);
-    var s=diff%60;
-    document.getElementById('sc-days').textContent=d.toLocaleString();
-    document.getElementById('sc-hours').textContent=h.toLocaleString();
-    document.getElementById('sc-mins').textContent=m.toLocaleString();
-    document.getElementById('sc-secs').textContent=s;
-  }
-  tick();
-  setInterval(tick,1000);
+var start=new Date(‘2026-03-17T00:00:00’);
+function tick(){
+var now=new Date();
+var diff=Math.max(0,Math.floor((now-start)/1000));
+var d=Math.floor(diff/86400);
+var h=Math.floor((diff%86400)/3600);
+var m=Math.floor((diff%3600)/60);
+var s=diff%60;
+document.getElementById(‘sc-days’).textContent=d.toLocaleString();
+document.getElementById(‘sc-hours’).textContent=h.toLocaleString();
+document.getElementById(‘sc-mins’).textContent=m.toLocaleString();
+document.getElementById(‘sc-secs’).textContent=s;
 }
-</script>
+tick();
+setInterval(tick,1000);
+}
+</script></body>
 
-</body>
 </html>
