@@ -1,4 +1,6 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -179,7 +181,9 @@ audio{width:100%;height:40px;border-radius:40px;filter:sepia(.3) hue-rotate(300d
 #bgm-switcher.open .bgm-track-btn{opacity:1;pointer-events:all;transform:scale(1)}
 #bgm-switcher.open .bgm-track-btn:nth-child(2){transition-delay:.05s}
 #bgm-switcher.open .bgm-track-btn:nth-child(3){transition-delay:.1s}
-#bgm-switcher.open .bgm-track-btn:nth-child(4){transition-delay:.15s}/* ── SINCE SECTION ─────────────────────────────────── */
+#bgm-switcher.open .bgm-track-btn:nth-child(4){transition-delay:.15s}
+
+/* ── SINCE SECTION ─────────────────────────────────── */
 .since-section{background:linear-gradient(180deg,#110009 0%,#1e0616 50%,#110009 100%);text-align:center;padding:clamp(70px,11vw,130px) clamp(20px,5vw,80px)}
 .since-inner{max-width:760px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:clamp(16px,3vw,28px)}
 .since-eyebrow{font-family:‘Montserrat’,sans-serif;font-weight:300;font-size:clamp(.65rem,1.6vw,.8rem);letter-spacing:.3em;color:rgba(212,175,122,.45);text-transform:uppercase}
@@ -196,41 +200,28 @@ audio{width:100%;height:40px;border-radius:40px;filter:sepia(.3) hue-rotate(300d
 .since-pulse{position:absolute;bottom:10px;right:12px;width:6px;height:6px;border-radius:50%;background:var(–rose);animation:since-blink 1s ease-in-out infinite}
 @keyframes since-blink{0%,100%{opacity:.25;transform:scale(1)}50%{opacity:1;transform:scale(1.4)}}
 .since-note{font-family:‘Lora’,serif;font-style:italic;font-size:clamp(.78rem,1.7vw,.92rem);color:rgba(249,168,201,.32);line-height:1.8;max-width:420px;margin-top:4px}
-/* ── ALO YOGA GIFT CARD SECTION ─────────────────────── */
-.alo-section{background:linear-gradient(180deg,#110009,#150c18 50%,#110009);text-align:center}
-.alo-card{position:relative;width:100%;background:linear-gradient(145deg,#1a0d2e 0%,#130a20 40%,#1e0f2c 100%);border:1px solid rgba(180,140,255,.2);border-top:none;border-radius:0 0 24px 24px;overflow:hidden;padding:clamp(22px,4vw,36px) clamp(24px,5vw,40px) clamp(18px,3vw,28px);box-shadow:0 32px 80px rgba(0,0,0,.7),0 0 0 1px rgba(180,140,255,.06) inset}
-.alo-shimmer{position:absolute;inset:0;pointer-events:none;background:linear-gradient(115deg,transparent 30%,rgba(180,140,255,.05) 50%,transparent 70%);animation:alo-shim 4s ease-in-out infinite}
-@keyframes alo-shim{0%,100%{transform:translateX(-100%)}50%{transform:translateX(100%)}}
-.alo-ribbon{background:linear-gradient(90deg,transparent,rgba(180,140,255,.07),rgba(180,140,255,.14),rgba(180,140,255,.07),transparent);border-top:1px solid rgba(180,140,255,.18);border-bottom:1px solid rgba(180,140,255,.18);width:100%;padding:9px 20px;border-radius:12px 12px 0 0}
-.alo-ribbon-text{font-family:“Dancing Script”,cursive;font-size:clamp(1rem,2.5vw,1.25rem);color:rgba(180,140,255,.65);letter-spacing:.06em}
-.alo-from-badge{display:inline-block;font-family:“Montserrat”,sans-serif;font-weight:300;font-size:.72rem;letter-spacing:.18em;color:rgba(180,140,255,.55);text-transform:uppercase;border:1px solid rgba(180,140,255,.2);border-radius:30px;padding:4px 14px;margin-bottom:18px}
-.alo-amount{font-family:“Dancing Script”,cursive;font-size:clamp(3.4rem,10vw,5.5rem);line-height:1;background:linear-gradient(135deg,#c4a0ff,#e8d5ff,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.alo-label{font-family:“Montserrat”,sans-serif;font-weight:300;font-size:.78rem;letter-spacing:.3em;color:rgba(180,140,255,.35);text-transform:uppercase;margin-top:4px}
-.alo-divider-line{display:flex;align-items:center;justify-content:center;gap:8px;margin:18px 0}
-.alo-divider-line::before,.alo-divider-line::after{content:””;flex:1;height:1px;background:rgba(180,140,255,.12)}
-.alo-divider-dot{width:5px;height:5px;border-radius:50%;background:rgba(180,140,255,.2)}
-.alo-info-row{display:flex;justify-content:space-between;align-items:center;padding:7px 0;border-bottom:1px solid rgba(180,140,255,.06)}
-.alo-info-label{font-family:“Montserrat”,sans-serif;font-weight:300;font-size:.72rem;letter-spacing:.15em;color:rgba(180,140,255,.3);text-transform:uppercase}
-.alo-info-val{font-family:“Lora”,serif;font-size:.9rem;color:rgba(255,240,255,.65)}
-.alo-btn{display:block;width:100%;padding:14px 24px;border:none;border-radius:50px;background:linear-gradient(135deg,#7c3aed,#5b21b6);color:#fff;font-family:“Montserrat”,sans-serif;font-weight:500;font-size:.9rem;letter-spacing:.14em;text-decoration:none;text-align:center;cursor:pointer;box-shadow:0 10px 34px rgba(124,58,237,.4);transition:transform .25s,box-shadow .25s;margin-bottom:16px}
-.alo-btn:hover{transform:translateY(-2px);box-shadow:0 16px 44px rgba(124,58,237,.58)}
-.alo-note{font-family:“Lora”,serif;font-style:italic;font-size:.78rem;color:rgba(180,140,255,.32);line-height:1.7;text-align:center}
-.alo-teaser{margin-top:32px;background:rgba(180,140,255,.04);border:1px solid rgba(180,140,255,.12);border-radius:20px;padding:clamp(18px,3vw,28px) clamp(20px,4vw,32px);display:flex;flex-direction:column;align-items:center;gap:12px;width:100%}
-.alo-teaser-icon{font-size:clamp(1.8rem,4vw,2.4rem);animation:alo-icon-sway 3.5s ease-in-out infinite}
-@keyframes alo-icon-sway{0%,100%{transform:rotate(-5deg) scale(1)}50%{transform:rotate(5deg) scale(1.08)}}
-.alo-teaser-text{font-family:“Lora”,serif;font-style:italic;font-size:clamp(.86rem,2vw,1.02rem);color:rgba(180,140,255,.52);line-height:1.95;text-align:center}
-.alo-teaser-text strong{color:rgba(200,170,255,.8);font-style:normal}
 </style>
+
 </head>
-<body><canvas id="hearts-canvas"></canvas>
+<body>
+
+<canvas id="hearts-canvas"></canvas>
+
 <div class="star-field" id="stars"></div>
-<div id="transition-overlay"><div class="transition-text" id="transition-text"></div></div><audio id="bgm-audio" loop src="BGM.mp3" style="display:none"></audio>
+<div id="transition-overlay"><div class="transition-text" id="transition-text"></div></div>
+
+<audio id="bgm-audio" loop src="BGM.mp3" style="display:none"></audio>
+
 <div id="bgm-switcher">
 <button id="bgm-switch-btn" onclick="toggleSwitcher()" title="Change BGM">&#9836;</button>
 <button class="bgm-track-btn active" id="bgm-t1" onclick="switchBgm(1)">1</button>
 <button class="bgm-track-btn" id="bgm-t2" onclick="switchBgm(2)">2</button>
 <button class="bgm-track-btn" id="bgm-t3" onclick="switchBgm(3)">3</button>
-</div><div id="bgm-bar" onclick="toggleBgm()"><div class="bgm-dot"></div><span class="bgm-label" id="bgm-label">BGM</span></div><div id="lock" onclick="startBgm()">
+</div>
+
+<div id="bgm-bar" onclick="toggleBgm()"><div class="bgm-dot"></div><span class="bgm-label" id="bgm-label">BGM</span></div>
+
+<div id="lock" onclick="startBgm()">
 <div class="lock-ring" style="width:320px;height:320px;top:50%;left:50%;margin-top:-160px;margin-left:-160px"></div>
 <div class="lock-ring" style="width:480px;height:480px;top:50%;left:50%;margin-top:-240px;margin-left:-240px;animation-delay:.9s"></div>
 <div class="lock-ring" style="width:640px;height:640px;top:50%;left:50%;margin-top:-320px;margin-left:-320px;animation-delay:1.8s"></div>
@@ -245,7 +236,11 @@ audio{width:100%;height:40px;border-radius:40px;filter:sepia(.3) hue-rotate(300d
 <div id="lockErr" class="lock-err hidden">Hmm... not quite right &#127800;</div>
 </div>
 </div>
-</div><div id="main"><section class="hero">
+</div>
+
+<div id="main">
+
+<section class="hero">
 <div class="hero-bg-photos" id="heroBg"></div>
 <div class="hero-gradient"></div>
 <div class="hero-content">
@@ -257,7 +252,11 @@ audio{width:100%;height:40px;border-radius:40px;filter:sepia(.3) hue-rotate(300d
 <div class="hero-aries">&#9800; aries &middot; march 27 &middot; always blooming</div>
 </div>
 <div class="scroll-hint"><span>scroll</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12l7 7 7-7"/></svg></div>
-</section><div class="divider"></div><section class="section love-section">
+</section>
+
+<div class="divider"></div>
+
+<section class="section love-section">
 <div class="section-inner">
 <div class="love-grid">
 <div class="love-photo-wrap reveal-left"><img class="love-photo" src="97b667dcfc43f05a9a5bfb75c5ba1cb1.JPG" alt="Elsie"><div class="love-photo-accent"></div>
@@ -272,23 +271,39 @@ audio{width:100%;height:40px;border-radius:40px;filter:sepia(.3) hue-rotate(300d
 </div>
 </div>
 </div>
-</section><div class="divider"></div><section class="section coder-section">
+</section>
+
+<div class="divider"></div>
+
+<section class="section coder-section">
 <div class="coder-inner">
 <div style="font-size:clamp(2rem,5vw,3rem)" class="reveal">&#128187;</div>
 <div class="coder-quote reveal">&ldquo;You said you don&rsquo;t love me yet &mdash;<br>and that&rsquo;s okay.&rdquo;</div>
 <div class="coder-sub reveal">I will use every bit of energy I have to make you fall in love with me.<br>This is a programmer&rsquo;s romance &mdash; patient, precise, and never giving up.</div>
-<pre class="coder-code reveal">while (!elsie.lovesChris) {chris.tryHarder();
+<pre class="coder-code reveal">while (!elsie.lovesChris) {
+
+chris.tryHarder();
 chris.beMoreRomantic();
 chris.neverGiveUp();
+
 }</pre>
+
 <div class="coder-sub reveal">I&rsquo;ve already started imagining us travelling the world together &mdash;<br>Orlando. Japan. Beijing. Vietnam. Italy.<br>You and me, side by side, in every city, in every photo.</div>
 <div class="coder-sig reveal">Love you &mdash; Chris &#127800;</div>
 </div>
-</section><div class="divider"></div><!-- ── TIME SINCE SECTION ──────────────────────────── --><section class="since-section">
+</section>
+
+<div class="divider"></div>
+
+<!-- ── TIME SINCE SECTION ──────────────────────────── -->
+
+<section class="since-section">
 <div class="since-inner">
 <div class="since-eyebrow reveal">&#9825; counting every moment</div>
 <div class="since-title reveal">Us, Since March 17, 2026</div>
-<div class="since-sub reveal">the clock started the day you came into my life</div><div class="since-grid reveal">
+<div class="since-sub reveal">the clock started the day you came into my life</div>
+
+<div class="since-grid reveal">
   <div class="since-card">
     <span class="since-card-icon">&#127757;</span>
     <span class="since-val" id="sc-days">0</span>
@@ -313,10 +328,16 @@ chris.neverGiveUp();
     <span class="since-unit">Seconds</span>
     <div class="since-pulse" style="animation-delay:.1s"></div>
   </div>
-</div><div class="since-note reveal">Every second that passes is one more second<br>I&rsquo;ve spent thinking about you. &#127800;</div>
+</div>
+
+<div class="since-note reveal">Every second that passes is one more second<br>I&rsquo;ve spent thinking about you. &#127800;</div>
 </div>
 </section>
-<!-- ── END TIME SINCE ─────────────────────────────── --><div class="divider"></div><section class="section photo-story">
+<!-- ── END TIME SINCE ─────────────────────────────── -->
+
+<div class="divider"></div>
+
+<section class="section photo-story">
 <div class="photo-story-inner">
 <div class="photo-row flip reveal">
 <div class="photo-story-img-wrap" onclick="openLightbox('elsie2')"><img class="photo-story-img" src="5d3c734a12d2bdb358378a00c2a1a480.JPG" alt=""><div class="zoom-hint">tap &#10022;</div>
@@ -398,7 +419,11 @@ chris.neverGiveUp();
 </div>
 </div>
 </div>
-</section><div class="divider"></div><section class="section audio-section">
+</section>
+
+<div class="divider"></div>
+
+<section class="section audio-section">
 <div class="section-inner">
 <div class="audio-title reveal">A message just for you</div>
 <div class="audio-sub reveal">close your eyes &amp; press play &#127911;</div>
@@ -413,7 +438,11 @@ chris.neverGiveUp();
 </div>
 </div>
 </div>
-</section><div class="divider"></div><section class="section gift-section">
+</section>
+
+<div class="divider"></div>
+
+<section class="section gift-section">
 <div class="section-inner">
 <div class="gift-eyebrow reveal">&#127873; a little something for you</div>
 <div class="gift-title reveal">One Gift, Delivered With Love</div>
@@ -452,47 +481,11 @@ Tomorrow, when we finally meet, I&rsquo;ll give you the rest of my love in perso
 </div>
 </div>
 </div>
-</section><div class="divider"></div><!-- ── ALO YOGA GIFT CARD SECTION ─────────────────────── --><section class="section alo-section">
-<div class="section-inner">
-<div class="gift-eyebrow reveal">&#129504; because you deserve to glow at barre too</div>
-<div class="gift-title reveal" style="background:linear-gradient(135deg,#c4a0ff,#e8d5ff,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">For My Barre Princess</div>
-<div class="gift-subtitle reveal" style="color:rgba(180,140,255,.5);">Since the first day we walked in ALO together, you talked about your barre classes, you said everyone in your class wear ALO clothing. I want my princess to have a fresh new set to wear when she goes. &#128155;</div>
-<div class="gift-card-wrap reveal">
-<div class="alo-ribbon"><span class="alo-ribbon-text">Go shine at barre, Elsie &#9825;</span></div>
-<div class="alo-card">
-<div class="alo-shimmer"></div>
-<div class="gc-top">
-<div class="alo-from-badge">from Chris, with love &#10022;</div>
-<div class="alo-amount">$200<span class="gc-cents">.00</span></div>
-<div class="alo-label">Alo Yoga eGift Card</div>
-</div>
-<div class="alo-divider-line">
-<span class="alo-divider-dot"></span><span class="alo-divider-dot"></span>
-<span class="alo-divider-dot"></span><span class="alo-divider-dot"></span>
-<span class="alo-divider-dot"></span><span class="alo-divider-dot"></span>
-<span class="alo-divider-dot"></span><span class="alo-divider-dot"></span>
-</div>
-<div class="gc-bottom" style="margin-bottom:24px">
-<div class="alo-info-row">
-<span class="alo-info-label">Redeemable at</span>
-<span class="alo-info-val">aloyoga.com</span>
-</div>
-</div>
-<a class="alo-btn" href="https://www.aloyoga.com/gift_cards/21852813/a88a60962eb92ada7b616a5011dea035" target="_blank" rel="noopener">Open Your Alo Gift &nbsp;&#10230;</a>
-<div class="alo-note">&#9432;&nbsp; Click above to redeem your Alo Yoga gift card. Shop anything you love &mdash; leggings, sports bras, everything for barre. &#128155;</div>
-</div>
-<div class="alo-teaser">
-<div class="alo-teaser-icon">&#129504;</div>
-<div class="alo-teaser-text">
-<strong>Wear it to barre and think of me.</strong><br>
-I want to be the reason you smile when you&rsquo;re getting ready for class.<br>
-<em>One day I&rsquo;ll be there cheering you on in person.</em>
-</div>
-</div>
-</div>
-</div>
 </section>
-<!-- ── END ALO YOGA SECTION ─────────────────────────── --><div class="divider"></div><section class="section wish-section">
+
+<div class="divider"></div>
+
+<section class="section wish-section">
 <div class="section-inner">
 <span class="wish-cake reveal-scale">&#127874;</span>
 <div class="wish-main reveal">Happy Birthday, Elsie!</div>
@@ -506,10 +499,16 @@ together, side by side, everywhere in this world. &#127758;&#127800;
 </div>
 <img class="footer-photo reveal" src="56ce7fbd5766e9c3fef01ce5713ca1da.JPG" alt="Elsie"><div class="footer-sig reveal">With all my love &mdash; Chris &#9825;</div>
 </div>
-</section></div><div id="lightbox">
+</section>
+
+</div>
+
+<div id="lightbox">
 <button id="lightbox-close" onclick="closeLightbox()">&#10005;</button>
 <img id="lightbox-img" src="" alt="">
-</div><script>
+</div>
+
+<script>
 var IMAGES={
 cover:'IMG_2676.jpg',
 chris1:'Chris1.jpg',
@@ -587,5 +586,7 @@ function startSinceClock(){
   tick();
   setInterval(tick,1000);
 }
-</script></body>
+</script>
+
+</body>
 </html>
